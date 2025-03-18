@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="registration.css">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login-box">
+            <form action="">
+                <h2>Register</h2>
+                <!-- User -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <input type="text" pattern="[A-Za-z ]{3,}" title="Only letters and spaces, minimum 3 characters" required>
+                        <label for="username">Username</label>
+                    </div>
+                    <!-- Email -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        <input type="text" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                        <label for="Eamil">Email</label>
+                    </div>
+                    <!-- Password -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </span>
+                        <input type="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        <label for="Password">Password</label>
+                    </div>
+                    
+                    <!-- Confirm Password -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-key"></i>
+                        </span>
+                        <input type="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        <label for="Confirm Password">Confirm Password</label>
+                    </div>
+                    <!-- Remeber Me checkbox -->
+                    <div class="rememe-forget">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#">Forget Password</a>
+                    </div>
+                    <!-- Remeber Me Button -->
+                    <button type="submit">Login</button>
+                    <div class="register-link">
+                        <p>Don't have account?
+                            <a href="#">Register</a>
+                        </p>
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
